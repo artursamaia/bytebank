@@ -1,0 +1,19 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "Projeto de Contas Bytebank",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artursamaia/bytebank.git"
+  },
+  "author": "Artur Maia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artursamaia/bytebank/issues"
+  },
+  "homepage": "https://github.com/artursamaia/bytebank#readme"
+}
