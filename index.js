@@ -1,7 +1,6 @@
 import { cliente } from "./Cliente.js";
 import { CCorrente } from "./CCorrente.js";
-
-
+z
 const cliente1  =  new cliente();
 const CCorrente1 =  new CCorrente(cliente1);
 

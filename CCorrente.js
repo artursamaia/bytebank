@@ -1,7 +1,10 @@
 export class CCorrente {
     agencia ;
-    #saldo = 0 ;
     cliente;
+
+    
+    #saldo = 0 ; // Atributo privado. 
+
 
     constructor(cliente){
 
