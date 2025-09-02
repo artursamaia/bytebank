@@ -1,25 +1,33 @@
 import { cliente } from "./Cliente.js";
 import { CCorrente } from "./CCorrente.js";
-z
-const cliente1  =  new cliente();
-const CCorrente1 =  new CCorrente(cliente1);
-
-cliente1.nome = "Ricardo";
-cliente1.cpf = 11122233344 ;
-CCorrente1.agencia = 1212 ;
-
-CCorrente1.deposito(100);
-
-
-const cliente2  =  new cliente();
-const CCorrente2 =  new CCorrente(cliente2);
-
-cliente2.nome = "Julia";
-cliente2.cpf = 22233344455;
-CCorrente2.agencia = 1212;
-
-CCorrente2.deposito(100);
 
 
 
+const Cliente1 = new cliente();
+Cliente1.nome = "Ricardo";
+Cliente1.cpf = 11122233344;
 
+const CCorrente1 =  new CCorrente();
+
+CCorrente1.cliente = Cliente1;
+CCorrente1.agencia = 1001 ;
+CCorrente1.numeroConta = 1556271;
+
+
+const Cliente2 = new cliente();
+Cliente2.nome = "Larissa";
+Cliente2.cpf = 22233344455;
+
+
+const CCorrente2 =  new CCorrente();
+CCorrente2.cliente = Cliente2;
+CCorrente2.agencia = 1002;
+CCorrente2.numeroConta = 8827171;
+
+
+
+
+console.log(Cliente1);
+console.log(CCorrente1);
+
+console.log(CCorrente2);
