@@ -1,6 +1,7 @@
 import { cliente } from "./Cliente.js";
 
 export class CCorrente {
+    static quantidadeDeContas = 0;
     #cliente ; // Atributo privado. 
     #saldo = 0 ; // Atributo privado. 
     
@@ -28,9 +29,10 @@ export class CCorrente {
     constructor(cliente, agencia ){
         this.agencia = agencia;
         this.#cliente = cliente;
+        CCorrente.quantidadeDeContas += 1;
     }
 
-    
+
 
     sacar(valorSacado) {
         if(this.#saldo < valorSacado){

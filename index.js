@@ -17,4 +17,4 @@ CCorrente2.numeroConta = 8827171;
 
 
 
-console.log(CCorrente1);
+console.log(CCorrente);
