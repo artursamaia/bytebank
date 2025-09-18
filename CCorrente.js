@@ -1,19 +1,27 @@
 import { cliente } from "./Cliente.js";
 
 export class CCorrente {
-    #cliente ;
+    #cliente ; // Atributo privado. 
     #saldo = 0 ; // Atributo privado. 
     
     agencia ;
     numeroConta ;
 
-    set (novoValor){
+    
+    set cliente(novoValor){
         if(novoValor instanceof cliente){
-       this.#cliente = novoValor;
-       } else {
-        return
+        this.#cliente = novoValor;
        }
+    } 
+
+    get cliente(){
+        return this.#cliente;
     }
+
+    get saldo(){
+        return this.#saldo;
+    }
+
 
 
     sacar(valorSacado) {
@@ -40,10 +48,6 @@ export class CCorrente {
        const valorSacado = this.sacar(valor);
         conta.deposito(valor);
     
-    }
-
-    meuSaldo(conta){
-        console.log("Seu saldo atual é: ", this.#saldo);
     }
 
 
