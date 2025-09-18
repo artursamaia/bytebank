@@ -8,6 +8,7 @@ export class CCorrente {
     numeroConta ;
 
     
+
     set cliente(novoValor){
         if(novoValor instanceof cliente){
         this.#cliente = novoValor;
@@ -23,6 +24,13 @@ export class CCorrente {
     }
 
 
+
+    constructor(cliente, agencia ){
+        this.agencia = agencia;
+        this.#cliente = cliente;
+    }
+
+    
 
     sacar(valorSacado) {
         if(this.#saldo < valorSacado){
@@ -49,6 +57,5 @@ export class CCorrente {
         conta.deposito(valor);
     
     }
-
 
 }

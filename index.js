@@ -3,25 +3,15 @@ import { CCorrente } from "./CCorrente.js";
 
 
 
-const Cliente1 = new cliente();
-Cliente1.nome = "Ricardo";
-Cliente1.cpf = 11122233344;
+const Cliente1 = new cliente("Ricardo", 11122233344);
 
-const CCorrente1 =  new CCorrente();
-
-CCorrente1.cliente = Cliente1;
-CCorrente1.agencia = 1001 ;
+const CCorrente1 =  new CCorrente(Cliente1, 1001);
 CCorrente1.numeroConta = 1556271;
 
 
-const Cliente2 = new cliente();
-Cliente2.nome = "Larissa";
-Cliente2.cpf = 22233344455;
+const Cliente2 = new cliente("Larissa", 22233344455);
 
-
-const CCorrente2 =  new CCorrente();
-CCorrente2.cliente = Cliente2;
-CCorrente2.agencia = 1002;
+const CCorrente2 =  new CCorrente(Cliente2, 1002);
 CCorrente2.numeroConta = 8827171;
 
 
